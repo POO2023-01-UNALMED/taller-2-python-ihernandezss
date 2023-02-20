@@ -17,11 +17,11 @@ class Auto:
     def verificarIntegridad(self):
         for i in self.asientos:
             if i!=None:
-                if i.registro==self.registro:
-                    pass
-        if self.registro==self.motor.registro:
-            return ('Auto original')
-        return ("Las piezas no son originales")
+                if i.registro!=self.registro:
+                    return ("Las piezas no son originales")
+        if self.registro!=self.motor.registro:
+           return ('Las piezas no son originales')
+        return ("Auto original")
 
     
 
