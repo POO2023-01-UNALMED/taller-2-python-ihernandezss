@@ -25,8 +25,6 @@ class Auto:
     
 
 
-
-
 class Asiento:
     def __init__(self, color, precio, registro):
         self.color=color
